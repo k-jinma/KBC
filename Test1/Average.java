@@ -25,8 +25,11 @@ public class Average {
 			System.exit(1);
 		}
 
-		double avg =  (math + jap + eng) / 3;
-		System.out.println("3教科の平均点：" + avg );
+		double avg =  (math + jap + eng) / 3.0;
+		System.out.println("3教科の平均点：" + String.format("%.1f", avg ) );
+
+		//或いは
+		System.out.printf("%s%.1f", "3教科の平均点：" , avg );
 
 		sc.close();
 	}
