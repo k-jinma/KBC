@@ -84,12 +84,12 @@
 						for( int j = 0; j < col; j++ ){		// 列ループ
 						 %>
 						 	<%
-						 		if( items[ i * col +j ] != null ) {		// 最後の行で表示しない箇所はデータがないので、”ない＝null”を判定
+						 		if( items[ i * col + j ] != null ) {		// 最後の行で表示しない箇所はデータがないので、”ない＝null”を判定
 						 	%>
 								<td>
 									<img class="item" src="img/<%= items[ i * col +j ].img %>"><br>
-									<%= items[ i * col +j ].name %>　
-									<%= items[ i * col +j ].price %>円
+									<%= items[ i * col + j ].name %>　
+									<%= items[ i * col + j ].price %>円
 								</td>
 							<%
 						 		}	//End if
